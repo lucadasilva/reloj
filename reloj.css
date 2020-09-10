@@ -1,0 +1,77 @@
+.container {
+    width: 300px;
+  }
+  .reloj {
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    border: blue solid 3px;
+    border-radius: 50%;
+  }
+  .punto {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background: black;
+    position: relative;
+    bottom: 150px;
+    left: 148px;
+    z-index: 1;
+  }
+  .segundero {
+    width: 130px;
+    height: 3px;
+    background: red;
+    position: relative;
+    bottom: 155px;
+    left: 153px;
+    animation: rotar-segundero 60s infinite linear;
+  }
+  .minutero {
+    width: 140px;
+    height: 6px;
+    background: black;
+    position: relative;
+    bottom: 160px;
+    left: 153px;
+    animation: rotar-minutero 3600s infinite linear;
+  }
+  .horas {
+    width: 100px;
+    height: 6px;
+    background: green;
+    position: relative;
+    bottom: 166px;
+    left: 153px;
+    animation: rotar-horas 43200s infinite linear;
+  }
+  @keyframes rotar-segundero {
+    from {
+      transform-origin: left;
+      transform: rotate(0);
+    }
+    to {
+      transform-origin: left;
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes rotar-minutero {
+    from {
+      transform-origin: left;
+      transform: rotate(0);
+    }
+    to {
+      transform-origin: left;
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes rotar-horas {
+    from {
+      transform-origin: left;
+      transform: rotate(0);
+    }
+    to {
+      transform-origin: left;
+      transform: rotate(360deg);
+    }
+  }
